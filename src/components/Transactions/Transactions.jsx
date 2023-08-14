@@ -9,7 +9,7 @@ function Transactions() {
     useEffect(() => {
         dispatch(fetchTransactions());
     }, [dispatch]);
-    console.log(transactions);
+
     let content = null;
     if (isLoading) {
         content = <p>Loading... </p>;
